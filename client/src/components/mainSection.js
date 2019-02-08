@@ -157,7 +157,7 @@ export default class MainSection extends Component {
 						<div className="col-sm-12 col-md-6 col-lg-4 p-b-50">
 							<div className="block2">
 								<div className="block2-img wrap-pic-w of-hidden pos-relative block2-labelnew">
-									<img src={`url(images/item-02.jpg)`} alt="IMG-PRODUCT" />
+									<img src={require('./images/item-02.jpg')} alt="IMG-PRODUCT" />
 
 									<div className="block2-overlay trans-0-4">
 										<a href="#" className="block2-btn-addwishlist hov-pointer trans-0-4">
