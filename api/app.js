@@ -16,16 +16,16 @@ app.get('/api/products', (req,res) => {
 
 //Single product endpoint
 
-app.get('/api/product/:id', (req,res) => {
+app.get('/api/product/:id', async (req,res) => {
     axios.get('https://next.json-generator.com/api/json/get/EkzBIUWNL')
     .then(response => {
         const item = response.data.find((el) => { return req.params.id === el._id})
             if (item) {
                 res.status(200).send(item)
             } else {
-                res.status(404).send({error: "Item not found."})
+                res.status(500).send({err: "Can't find item!"})
             }
-    })
+    }) 
 })
 
 
