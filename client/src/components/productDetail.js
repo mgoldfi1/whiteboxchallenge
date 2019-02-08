@@ -24,7 +24,7 @@ export default class ProductDetail extends Component {
   render() {
     return (
       <div>
-        {this.state.err ? <Redirect to="/"/> : <ProductInfo/>}
+        {this.state.err ? <Redirect to="/"/> : <ProductInfo description={this.state.item.about} image={this.state.item.image} name={this.state.item.name} price={this.state.item.price}/>}
       </div>
     )
   }

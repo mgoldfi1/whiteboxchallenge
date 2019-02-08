@@ -1,0 +1,24 @@
+{
+  "name": "whiteboxchallenge",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "client": "cd client && yarn start",
+    "server": "cd api && nodemon app",
+    "dev": "concurrently --kill-others-on-fail \"yarn server\" \"yarn client\""
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mgoldfi1/whiteboxchallenge.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/mgoldfi1/whiteboxchallenge/issues"
+  },
+  "homepage": "https://github.com/mgoldfi1/whiteboxchallenge#readme",
+  "dependencies": {
+    "concurrently": "^4.1.0"
+  }
+}
