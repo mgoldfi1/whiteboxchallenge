@@ -1,5 +1,5 @@
 import React, { Component } from 'react'
-import { Grid, Cell } from 'react-mdl' 
+import { Link } from 'react-router-dom'
 
 export default class ProductBox extends Component {
   render() {
@@ -22,9 +22,9 @@ export default class ProductBox extends Component {
 									</div>
 								</div>
                                 <div class="block2-txt p-t-20">
-									<a href="product-detail.html" class="block2-name dis-block s-text3 p-b-5">
-										{this.props.name}
-									</a>
+									
+                                    <Link to="/product">{this.props.name}</Link>
+									
 
 									<span class="block2-price m-text6 p-r-5">
 										${this.props.price}
