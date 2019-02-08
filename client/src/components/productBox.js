@@ -23,12 +23,12 @@ export default class ProductBox extends Component {
 								</div>
                                 <div class="block2-txt p-t-20">
 									
-                                    <Link to="/product">{this.props.name}</Link>
+                                    <Link to={"/product/" + this.props.id} >{this.props.name}</Link>
 									
 
-									<span class="block2-price m-text6 p-r-5">
+									<div class="block2-price m-text6 p-r-5">
 										${this.props.price}
-									</span>
+									</div>
 								</div>
                         </div>
       </div>

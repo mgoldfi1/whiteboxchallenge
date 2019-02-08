@@ -7,6 +7,7 @@ export default class ProductsContainer extends Component {
     state = {
         products: []
     }
+    
     componentWillMount = () => {
         axios.get('/api/products')
         .then(res => this.setState({products: res.data}))

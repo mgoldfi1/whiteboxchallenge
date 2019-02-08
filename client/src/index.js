@@ -12,7 +12,7 @@ ReactDOM.render(
     <React.Fragment>
     <Navbar/>
     <Route exact path="/" component={App}/>   
-    <Route exact path="/product" component={ProductPage} />
+    <Route path="/product/:id" component={ProductPage} />
     </React.Fragment>
   </Router>
 
