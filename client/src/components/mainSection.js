@@ -1,5 +1,8 @@
-import React, { Component } from 'react'
-import ProductsContainer from './productsContainer'
+import React, { Component } from 'react';
+import ProductsContainer from './productsContainer';
+
+
+
 export default class MainSection extends Component {
   render() {
     return (
@@ -154,10 +157,8 @@ export default class MainSection extends Component {
 						</span>
 					</div>
 					<div className="row">
-						<div className="col-sm-12 col-md-6 col-lg-4 p-b-50">
 						<ProductsContainer/>
-                    </div>
-                 </div>
+                   </div>
             </div>
             </div>
             </div>

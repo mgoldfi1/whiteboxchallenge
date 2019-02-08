@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import ProductBox from './productBox.js';
 import axios from 'axios'
-
+import { Grid, Cell } from 'react-mdl'
 export default class ProductsContainer extends Component {
     state = {
         products: []
@@ -19,9 +19,9 @@ export default class ProductsContainer extends Component {
 
   render() {
     return (
-      <div>
-        {this.renderProducts()}
-      </div>
+      <React.Fragment>     
+             {this.renderProducts()}
+      </React.Fragment>
     )
   }
 }

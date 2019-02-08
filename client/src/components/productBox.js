@@ -1,13 +1,13 @@
 import React, { Component } from 'react'
+import { Grid, Cell } from 'react-mdl' 
 
 export default class ProductBox extends Component {
   render() {
     return (
-      <div>
+        <div style={{maxWidth: '400px', display: 'inline'}} className="col-sm-12 col-md-6 col-lg-4 p-b-50">
         <div className="block2">
 								<div className="block2-img wrap-pic-w of-hidden pos-relative block2-labelnew">
-									<img src={this.props.image} alt="IMG-PRODUCT" />
-
+									<img style={{height: '200px', width: '200px'}}src={this.props.image} alt="IMG-PRODUCT" />
 									<div className="block2-overlay trans-0-4">
 										<a href="#" className="block2-btn-addwishlist hov-pointer trans-0-4">
 											<i className="icon-wishlist icon_heart_alt" aria-hidden="true"></i>
