@@ -1,5 +1,5 @@
 import React, { Component } from 'react'
-
+import ProductsContainer from './productsContainer'
 export default class MainSection extends Component {
   render() {
     return (
@@ -155,24 +155,7 @@ export default class MainSection extends Component {
 					</div>
 					<div className="row">
 						<div className="col-sm-12 col-md-6 col-lg-4 p-b-50">
-							<div className="block2">
-								<div className="block2-img wrap-pic-w of-hidden pos-relative block2-labelnew">
-									<img src={require('./images/item-02.jpg')} alt="IMG-PRODUCT" />
-
-									<div className="block2-overlay trans-0-4">
-										<a href="#" className="block2-btn-addwishlist hov-pointer trans-0-4">
-											<i className="icon-wishlist icon_heart_alt" aria-hidden="true"></i>
-											<i className="icon-wishlist icon_heart dis-none" aria-hidden="true"></i>
-										</a>
-
-										<div className="block2-btn-addcart w-size1 trans-0-4">
-											<button className="flex-c-m size1 bg4 bo-rad-23 hov1 s-text1 trans-0-4">
-												Add to Cart
-											</button>
-										</div>
-									</div>
-								</div>
-                        </div>
+						<ProductsContainer/>
                     </div>
                  </div>
             </div>

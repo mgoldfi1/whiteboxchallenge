@@ -9,7 +9,7 @@ app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: false }));
 
 
-app.get('/products', (req,res) => {
+app.get('/api/products', (req,res) => {
     axios.get('https://next.json-generator.com/api/json/get/EkzBIUWNL')
     .then(response => res.status(200).send(response.data))
 
